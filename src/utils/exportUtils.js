@@ -63,7 +63,7 @@ export const exportFromBackend = async (endpoint, format = 'excel', params = {})
     })
     
     const token = localStorage.getItem('token')
-    const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000/api'
+    const apiUrl = import.meta.env.VITE_API_URL || 'https://qeema-track.developteam.site/api'
     
     const response = await fetch(`${apiUrl}${endpoint}?${queryParams.toString()}`, {
       method: 'GET',
